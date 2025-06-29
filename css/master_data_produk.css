@@ -1,0 +1,90 @@
+
+        body {
+                            font-family: 'Segoe UI', sans-serif;
+                            background: linear-gradient(120deg, #f5f7fa, #c3cfe2);
+                            padding: 40px;
+                    }
+                    h2 {
+                            color: #333;
+                            margin-bottom: 20px;
+                    }
+                    form {
+                            margin-bottom: 20px;
+                            display: flex; /* Biar form-nya sejajar gitu */
+                            align-items: center; /* Biar item di form nggak ngacak, lurus tengah */
+                            gap: 10px; /* Kasih jarak dikit antar elemen form */
+                    }
+                    input[type="text"] {
+                            padding: 8px;
+                            width: 200px;
+                            border: 1px solid #ccc;
+                            border-radius: 6px;
+                    }
+                    input[type="submit"], .btn {
+                            background-color: #007bff;
+                            color: white;
+                            border: none;
+                            padding: 8px 15px;
+                            border-radius: 6px;
+                            cursor: pointer;
+                            /* Nggak usah pake margin-left, udah diatur sama gap kok */
+                    }
+                    input[type="submit"]:hover, .btn:hover {
+                            background-color: #0056b3;
+                    }
+                    a.btn-add {
+                            bnd-color: #28a745;ackgrou
+                            /* Nggak perlu margin-bottom, udah di-handle sama flex */
+                            display: inline-block;
+                            text-decoration: none;
+                    }
+                    table {
+                            width: 100%;
+                            border-collapse: collapse;
+                            background-color: white;
+                            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+                    }
+                    th, td {
+                            padding: 12px;
+                            border-bottom: 1px solid #ddd;
+                            text-align: center;
+                    }
+                    th {
+                            background-color: #007bff;
+                            color: white;
+                    }
+                    tr:hover {
+                            background-color: #f1f1f1;
+                    }
+                    .aksi a {
+                            margin: 0 5px;
+                            color: #007bff;
+                            text-decoration: none;
+                    }
+                    .aksi a:hover {
+                            text-decoration: underline;
+                    }
+                    /* Nih, buat styling tombol back ke dashboard sama biar form-nya rapi */
+                    .form-and-dashboard-container {
+                            display: flex;
+                            justify-content: space-between; /* Biar form sama tombol dashboard pojok-pojokan */
+                            align-items: center;
+                            margin-bottom: 20px;
+                    }
+                    .btn-dashboard {
+                            background-color:rgb(231, 0, 0);
+                            color: white;
+                            border: none;
+                            padding: 8px 15px;
+                            border-radius: 6px;
+                            cursor: pointer;
+                            text-decoration: none;
+                            display: inline-flex;
+                            align-items: center;
+                            gap: 5px; /* Kasih jarak dikit antara icon sama teks */
+                            margin-left: auto; /* Biar tombolnya ngumpet di kanan sendiri */
+                    }
+                    .btn-dashboard:hover {
+                            background-color: rgb(180, 0, 0);
+                    }
+   

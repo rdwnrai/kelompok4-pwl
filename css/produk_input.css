@@ -1,0 +1,44 @@
+
+         /* Styling kece buat background & biar konten di tengah */
+            body {
+                font-family: 'Segoe UI', sans-serif;
+                background: linear-gradient(120deg, #f5f7fa, #c3cfe2);
+                display: flex;
+                justify-content: center;
+                align-items: flex-start; /* Biar itemnya ngumpul di atas */
+                min-height: 100vh; /* Biar body full tinggi layar */
+                padding-top: 50px; /* Kasih jarak atas dikit */
+                padding-bottom: 50px; /* Kasih jarak bawah juga */
+            }
+            /* Card custom, mirip-mirip Bootstrap tapi versi sendiri */
+            .custom-card {
+                background-color: #ffffff;
+                padding: 30px;
+                border-radius: 15px;
+                box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+                width: 100%;
+                max-width: 700px;
+                transition: 0.3s;
+            }
+            h2 {
+                text-align: center;
+                color: #333;
+                margin-bottom: 25px;
+            }
+            /* Tombol custom, sebenernya Bootstrap udah oke sih */
+            .btn-custom-produk {
+                background-color: #007bff;
+                color: white;
+            }
+            .btn-custom-produk:hover {
+                background-color: #0056b3;
+                color: white;
+            }
+            .btn-custom-dashboard {
+                background-color: rgb(231, 0, 0);
+                color: white;
+            }
+            .btn-custom-dashboard:hover {
+                background-color: rgb(180, 0, 0);
+                color: white;
+            }

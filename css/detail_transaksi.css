@@ -1,0 +1,84 @@
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            background-color: #f8f9fa;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start; /* Mengatur item agar sejajar di bagian atas */
+            min-height: 100vh;
+        }
+        .receipt-container {
+            background: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            max-width: 600px;
+            width: 100%;
+        }
+        .receipt-header {
+            text-align: center;
+            margin-bottom: 25px;
+            border-bottom: 2px dashed #dee2e6;
+            padding-bottom: 15px;
+        }
+        .receipt-header h4 {
+            color: #007bff;
+            font-weight: 700;
+            margin-bottom: 5px;
+        }
+        .receipt-header p {
+            font-size: 0.9em;
+            color: #6c757d;
+            margin-bottom: 0;
+        }
+        .receipt-info {
+            margin-bottom: 20px;
+            font-size: 0.95em;
+        }
+        .receipt-info strong {
+            display: inline-block;
+            width: 120px; /* Lebar tetap untuk label */
+        }
+        .receipt-table th, .receipt-table td {
+            font-size: 0.9em;
+            vertical-align: middle;
+            padding: 8px;
+        }
+        .receipt-table th {
+            background-color: #e9ecef;
+            text-align: center;
+        }
+        .receipt-table tbody tr:last-child td {
+            border-bottom: none;
+        }
+        .receipt-total {
+            text-align: right;
+            margin-top: 20px;
+            padding-top: 15px;
+            border-top: 2px dashed #dee2e6;
+            font-size: 1.1em;
+            font-weight: 700;
+            color: #28a745;
+        }
+        .receipt-footer {
+            text-align: center;
+            margin-top: 25px;
+            font-size: 0.85em;
+            color: #6c757d;
+        }
+        .print-buttons {
+            text-align: center;
+            margin-top: 30px;
+        }
+        .print-buttons .btn {
+            margin: 0 10px;
+            padding: 10px 20px;
+            border-radius: 6px;
+            font-weight: 600;
+        }
+          @media print {
+            .print-buttons, .receipt-footer {
+                display: none; /* Sembunyikan tombol dan footer saat mencetak */
+            }
+        }
+   

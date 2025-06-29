@@ -1,0 +1,83 @@
+/* Reset semua style biar ga aneh-aneh */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Style buat body, biar keliatan kece dan blur-blur gitu */
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(120deg, #f5f7fa, #c3cfe2);
+    backdrop-filter: blur(10px);
+    background-size: cover;
+    display: flex;
+    min-height: 100vh;
+}
+
+/* Main content, biar ga nempel ke kiri */
+.main {
+    margin-left: 230px;
+    padding: 30px;
+    width: 100%;
+    text-align: center;
+}
+
+/* Header biar keliatan bold dan keren */
+header {
+    background-color: #0056b3;
+    color: white;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 30px;
+}
+
+/* Container buat kartu-kartu, biar rapi dan ga dempet */
+.cards {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 30px;
+    flex-wrap: wrap;
+}
+
+/* Style kartu, biar kayak dashboard modern */
+.card {
+    background: white;
+    flex: 1;
+    min-width: 200px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    text-align: center;
+    transition: transform 0.2s;
+}
+
+/* Efek hover, biar pas diarahin mouse naik dikit */
+.card:hover {
+    transform: translateY(-5px);
+}
+
+/* Bungkus chart, biar chart-nya ga ngaco dan keliatan clean */
+.chart-container-wrapper {
+    background: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    text-align: center;
+    color: #555;
+    font-style: italic;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+/* Biar canvas chart-nya ga keluar-keluar dari container */
+.chart-container-wrapper canvas {
+    max-height: 100%;
+    width: 100% !important;
+    height: auto !important;
+}
