@@ -1,0 +1,99 @@
+    body {
+      background-color: #f0f2f5;
+      color: #333;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      width: 90%;
+      max-width: 1200px;
+      margin: 20px auto;
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+    }
+
+    .header {
+      background: linear-gradient(135deg, #6a11cb, #2575fc);
+      color: white;
+      text-align: center;
+      padding: 30px 20px;
+    }
+
+    .header h1 {
+      margin: 0;
+      font-size: 32px;
+    }
+
+    .header p {
+      margin-top: 10px;
+      font-size: 18px;
+    }
+
+    .main-content {
+      display: flex;
+      min-height: 500px;
+    }
+
+    .sidebar {
+      width: 25%;
+      background: #fafafa;
+      padding: 20px;
+      border-right: 1px solid #ddd;
+    }
+
+    .sidebar ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .sidebar ul li {
+      margin-bottom: 15px;
+    }
+
+    .sidebar ul li a {
+      text-decoration: none;
+      color: #6a11cb;
+      font-weight: 600;
+      display: block;
+      padding: 10px 15px;
+      background: white;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      transition: 0.3s;
+    }
+
+    .sidebar ul li a:hover {
+      background: #6a11cb;
+      color: white;
+    }
+
+    .content {
+      width: 75%;
+      padding: 30px;
+      background: #fff;
+    }
+
+    .content h2 {
+      color: #6a11cb;
+      font-size: 26px;
+      margin-bottom: 20px;
+      text-align: left;
+    }
+
+    .content p {
+      font-size: 18px;
+      line-height: 1.7;
+      text-align: justify;
+    }
+
+    .footer {
+      background: linear-gradient(135deg, #6a11cb, #2575fc);
+      color: white;
+      text-align: center;
+      padding: 20px;
+      font-size: 16px;
+    }
